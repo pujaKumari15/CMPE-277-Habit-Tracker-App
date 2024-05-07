@@ -63,8 +63,8 @@ fun ChatGPTScreen() {
             .toRequestBody("application/json; charset=utf-8".toMediaTypeOrNull())
         val request = Request.Builder()
             .url("https://api.openai.com/v1/chat/completions")
-            .header("Authorization", "Bearer")
-            .header("Assistant-ID", "AssistantID")
+            .header("Authorization", "Bearer sk-proj-esXAVC59adJ66cAqqIO0T3BlbkFJTvQ2H7M9sqEkHogPPXwP")
+            .header("Assistant-ID", "asst_chatgpt")
             .post(body)
             .build()
 
